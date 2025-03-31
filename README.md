@@ -1,7 +1,6 @@
 # DAQ-ANDI
 
-Sistema de adquisición de datos y control para el laboratorio de control de la Universidad Nacional de Ingeniería.
-
+Sistema de adquisición de datos y control basado en un PIC con protocolo HID.
 ## Características
 
 - Interfaz gráfica para visualización en tiempo real
@@ -23,7 +22,7 @@ Sistema de adquisición de datos y control para el laboratorio de control de la 
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/joser/DAQ-ANDI.git
+git clone https://github.com/paradoxelite/DAQ-ANDI.git
 ```
 
 2. Instalar las dependencias:
@@ -55,4 +54,4 @@ Este proyecto está bajo la Licencia MIT.
 
 ## Autor
 
-Tu Nombre 
+Jose Rodolfo Gomez Coeto
