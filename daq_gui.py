@@ -663,8 +663,8 @@ class DAQGUI:
                 self.time_data = np.roll(self.time_data, -1)
                 self.time_data[-1] = current_time
                 self.graphs_window.update_time(self.time_data)
-                    
-            except Exception as e:
+                
+        except Exception as e:
             print(f"Error updating GUI: {e}")
             
         # Programar siguiente actualización
@@ -906,8 +906,8 @@ class DAQGUI:
             
         try:
             # Actualizar variable t
-                current_time = time.perf_counter() - self.command_start_time
-                    self.input_values['t'] = current_time
+            current_time = time.perf_counter() - self.command_start_time
+            self.input_values['t'] = current_time
             
             # Ejecutar cada comando
             for output in ['Y1', 'Y2', 'Y3', 'Y4', 'Y5']:
@@ -925,7 +925,7 @@ class DAQGUI:
                     if output in ['Y1', 'Y2', 'Y3', 'Y4']:
                         self.daq.write_analog(int(output[1]), result)
                     else:  # Y5
-                                self.daq.write_digital(int(result), 6)
+                        self.daq.write_digital(int(result), 6)
                                 
                 except Exception as e:
                     print(f"Error executing command for {output}: {e}")
@@ -957,7 +957,7 @@ class DAQGUI:
             if output in ['Y1', 'Y2', 'Y3', 'Y4']:
                 self.daq.write_analog(int(output[1]), result)
             else:  # Y5
-                        self.daq.write_digital(int(result), 6)
+                self.daq.write_digital(int(result), 6)
                 
             messagebox.showinfo("Success", f"Applied command for {output}")
             
@@ -1125,7 +1125,7 @@ class DAQGUI:
             x = self.root.winfo_x()
             y = self.root.winfo_y()
             width = self.root.winfo_width()
-            self.qt_window.move(x + width + 20, y)  # 20 pixels de separación
+            self.graphs_window.move(x + width + 20, y)  # 20 pixels de separación
 
 class GraphsWindow(QMainWindow):
     def __init__(self, parent=None):
