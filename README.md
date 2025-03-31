@@ -1,6 +1,6 @@
 # DAQ-ANDI
 
-Sistema de adquisición de datos y control para el laboratorio de control de la Universidad Nacional de Ingeniería.
+Sistema de adquisición de datos y control para el laboratorio de control.
 
 ## Características
 
