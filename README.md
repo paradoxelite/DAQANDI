@@ -1,6 +1,6 @@
 # DAQ-ANDI
 
-Sistema de adquisición de datos y control basado en un PIC con protocolo HID.
+Sistema de adquisición de datos y control basado en un PIC 18f4550 con protocolo HID.
 ## Características
 
 - Interfaz gráfica para visualización en tiempo real
