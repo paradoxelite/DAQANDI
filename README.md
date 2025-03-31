@@ -1,7 +1,6 @@
 # DAQ-ANDI
 
-Sistema de adquisición de datos y control para el laboratorio de control.
-
+Sistema de adquisición de datos y control basado en un PIC con protocolo HID.
 ## Características
 
 - Interfaz gráfica para visualización en tiempo real
