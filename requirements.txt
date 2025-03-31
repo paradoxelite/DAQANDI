@@ -1,0 +1,5 @@
+PyQt5>=5.15.0
+pyqtgraph>=0.13.3
+numpy>=1.21.0
+openpyxl>=3.0.7
+hidapi>=0.14.0 
